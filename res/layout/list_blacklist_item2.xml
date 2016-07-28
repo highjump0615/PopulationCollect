@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="16dp">
+
+    <!-- 序号 -->
+    <TextView
+        android:id="@+id/text_no"
+        style="@style/NormalTextStyle"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="8dp"
+        android:gravity="right"
+        android:text="序号" />
+
+    <!-- MD5 -->
+    <TextView
+        android:id="@+id/text_id"
+        style="@style/NormalTextStyle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="8dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="MD5" />
+
+    <!-- 预警类型 -->
+    <TextView
+        android:id="@+id/text_type"
+        style="@style/NormalTextStyle"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="预警类型" />
+
+</LinearLayout>

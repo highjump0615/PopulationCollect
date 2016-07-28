@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- 系统日志 -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/text_no"
+        style="@style/NormalTextStyle"
+        android:layout_width="48dp"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="12dp"
+        android:gravity="right"
+        android:text="序号" />
+
+    <TextView
+        android:id="@+id/text_name"
+        style="@style/NormalTextStyle"
+        android:layout_width="96dp"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="12dp"
+        android:gravity="center"
+        android:text="姓名" />
+
+    <TextView
+        android:id="@+id/text_address"
+        style="@style/NormalTextWithMultiLineStyle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="12dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="现住地详细地址" />
+
+    <TextView
+        android:id="@+id/text_date"
+        style="@style/NormalTextStyle"
+        android:layout_width="108dp"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="12dp"
+        android:gravity="left"
+        android:text="来现住地日期" />
+
+    <TextView
+        android:id="@+id/text_register_time"
+        style="@style/NormalTextWithMultiLineStyle"
+        android:layout_width="108dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="登记时间" />
+
+</LinearLayout>

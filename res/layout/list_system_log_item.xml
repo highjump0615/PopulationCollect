@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- 系统日志 -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/text_no"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="12dp"
+        android:ellipsize="end"
+        android:gravity="right"
+        android:maxLines="1"
+        android:text="序号"
+        android:textColor="@android:color/black"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/text_time"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="12dp"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:maxLines="1"
+        android:text="房主姓名"
+        android:maxLength="11"
+        android:textColor="@android:color/black"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/text_operation"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.0"
+        android:ellipsize="end"
+        android:gravity="left"
+        android:maxLines="1"
+        android:text="所在地详址"
+        android:textColor="@android:color/black"
+        android:textSize="20sp" />
+
+</LinearLayout>

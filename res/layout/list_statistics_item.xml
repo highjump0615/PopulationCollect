@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- 采集统计 -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/text_first"
+        style="@style/NormalTextStyle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="8dp"
+        android:layout_weight="1.0"
+        android:gravity="center"
+        android:text="序号" />
+
+    <TextView
+        android:id="@+id/text_second"
+        style="@style/NormalTextStyle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="8dp"
+        android:layout_weight="1.0"
+        android:gravity="center"
+        android:text="房主姓名" />
+
+    <TextView
+        android:id="@+id/text_third"
+        style="@style/NormalTextStyle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="8dp"
+        android:layout_weight="1.0"
+        android:gravity="center"
+        android:text="所在地详址" />
+
+    <TextView
+        android:id="@+id/text_fourth"
+        style="@style/NormalTextStyle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="8dp"
+        android:layout_weight="1.0"
+        android:gravity="center"
+        android:text="所在地详址" />
+
+    <TextView
+        android:id="@+id/text_fifth"
+        style="@style/NormalTextStyle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.0"
+        android:gravity="center"
+        android:text="所在地详址" />
+
+</LinearLayout>

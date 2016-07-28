@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--<item android:drawable="@drawable/ic_action_collapse2" android:state_empty="true" />-->
+    <item android:drawable="@drawable/ic_action_expand" android:state_expanded="true" />
+    <item android:drawable="@drawable/ic_action_collapse2" />
+
+</selector>

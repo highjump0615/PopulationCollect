@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="16dp"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <!-- 显示出租房屋详细登记 -->
+    <LinearLayout
+        android:id="@+id/layout_xiugai_anniu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <!-- 修改 -->
+        <Button
+            android:id="@+id/button_xiugai"
+            style="@style/NormalTextStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="24dp"
+            android:paddingRight="24dp"
+            android:text="修改" />
+
+        <!-- 删除 -->
+        <Button
+            android:id="@+id/button_shanchu"
+            style="@style/NormalTextStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="24dp"
+            android:paddingRight="24dp"
+            android:text="删除" />
+
+        <!-- 当前租住人 -->
+        <Button
+            android:id="@+id/button_dangqianzuzhuren"
+            style="@style/NormalTextStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="当前租住人" />
+
+        <!-- 添加租住人 -->
+        <Button
+            android:id="@+id/button_tianjiazuzhuren"
+            style="@style/NormalTextStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="添加租住人" />
+
+    </LinearLayout>
+
+    <!-- 录入出租房屋登记 -->
+    <LinearLayout
+        android:id="@+id/layout_luru_anniu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <!-- 保存 -->
+        <Button
+            android:id="@+id/button_baocun"
+            style="@style/NormalTextStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="24dp"
+            android:paddingRight="24dp"
+            android:text="保存" />
+
+        <!-- 采集房屋图像 -->
+        <Button
+            android:id="@+id/button_caijifangwutuxiang"
+            style="@style/NormalTextStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="采集房屋图像" />
+
+        <!-- 采集房屋摄像 -->
+        <Button
+            android:id="@+id/button_caijifangwushexiang"
+            style="@style/NormalTextStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="采集房屋摄像" />
+
+    </LinearLayout>
+
+</LinearLayout>

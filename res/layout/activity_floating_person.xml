@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- 显示来京人员 -->
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:fillViewport="true">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="8dp">
+
+        <!-- 登记信息 -->
+        <include layout="@layout/layout_register_info" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="8dp"
+            android:background="@android:color/black" />
+
+        <!-- 基本信息 -->
+        <include layout="@layout/layout_floating_person_basic_info" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="8dp"
+            android:background="@android:color/black" />
+
+        <!-- 家庭户信息 -->
+        <include layout="@layout/layout_floating_person_family_info" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="8dp"
+            android:background="@android:color/black" />
+
+        <!-- 居住信息 -->
+        <include layout="@layout/layout_floating_person_resident_info" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="8dp"
+            android:background="@android:color/black" />
+
+        <!-- 就业社保信息 -->
+        <include layout="@layout/layout_floating_person_job_insurance_info" />
+
+        <!-- 备注 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/NormalTextStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="备注：" />
+
+            <EditText
+                android:id="@+id/edit_beizhu"
+                style="@style/NormalTextWithMultiLineStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textMultiLine"
+                android:maxLength="250" />
+
+        </LinearLayout>
+
+        <!-- 按钮 -->
+        <include layout="@layout/layout_button_panel" />
+
+    </LinearLayout>
+
+</ScrollView>

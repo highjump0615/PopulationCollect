@@ -1,0 +1,16 @@
+<resources>
+
+    <!--
+        Base application theme for API 14+. This theme completely replaces
+        AppBaseTheme from BOTH res/values/styles.xml and
+        res/values-v11/styles.xml on API 14+ devices.
+    -->
+    <style name="AppBaseTheme" parent="android:Theme.DeviceDefault.Light.DarkActionBar">
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+    <style name="DialogTheme" parent="android:Theme.DeviceDefault.Light.Dialog">
+
+    </style>
+
+</resources>

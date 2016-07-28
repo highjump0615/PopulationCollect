@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- 主界面 -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="64dp">
+
+    <!-- 出租房屋 -->
+    <TextView
+        android:id="@+id/text_chuzufangwushu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
+        android:text="出租房屋：0 套"
+        android:textColor="@android:color/black"
+        android:textSize="24sp" />
+
+    <!-- 来京人员 -->
+    <TextView
+        android:id="@+id/text_laijingrenyuanshu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_chuzufangwushu"
+        android:layout_marginTop="32dp"
+        android:text="来京人员：0 人"
+        android:textColor="@android:color/black"
+        android:textSize="24sp" />
+
+    <!-- 车辆登记 -->
+    <TextView
+        android:id="@+id/text_cheliangdengjishu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_laijingrenyuanshu"
+        android:layout_marginTop="32dp"
+        android:text="车辆登记：0 辆"
+        android:textColor="@android:color/black"
+        android:textSize="24sp" />
+
+</RelativeLayout>

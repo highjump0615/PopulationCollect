@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- 上报数据 -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="48dp">
+
+    <!-- 采集时间 -->
+    <LinearLayout
+        android:id="@+id/layout_date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="8dp">
+
+        <TextView
+            style="@style/NormalTextStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="采集时间：" />
+
+        <EditText
+            android:id="@+id/edit_start_date"
+            style="@style/NormalTextStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:inputType="date" />
+
+        <TextView
+            style="@style/NormalTextStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="到" />
+
+        <EditText
+            android:id="@+id/edit_end_date"
+            style="@style/NormalTextStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:inputType="date" />
+
+    </LinearLayout>
+
+    <!-- 按钮 -->
+    <LinearLayout
+        android:id="@+id/layout_buttons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layout_date"
+        android:layout_marginTop="24dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <!-- 上传数据 -->
+        <Button
+            android:id="@+id/button_shangchuan"
+            style="@style/NormalTextStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="上传数据" />
+
+        <!-- 下载数据 -->
+        <Button
+            android:id="@+id/button_xiazai"
+            style="@style/NormalTextStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="下载数据" />
+
+        <!-- 导出数据 -->
+        <Button
+            android:id="@+id/button_daochu"
+            style="@style/NormalTextStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="导出数据" />
+
+        <!-- 导入数据 -->
+        <Button
+            android:id="@+id/button_daoru"
+            style="@style/NormalTextStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="导入数据" />
+
+    </LinearLayout>
+
+    <!-- 还未上报数据记录 -->
+    <TextView
+        android:id="@+id/text_haiweishangbaojilu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layout_buttons"
+        android:layout_marginTop="64dp"
+        android:text="还未上报数据记录：0 条"
+        android:textColor="@android:color/black"
+        android:textSize="24sp" />
+
+    <!-- 成功上报数据记录 -->
+    <TextView
+        android:id="@+id/text_yijingshangbaojilu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_haiweishangbaojilu"
+        android:layout_marginTop="16dp"
+        android:text="已经上报数据记录：0 条"
+        android:textColor="@android:color/black"
+        android:textSize="24sp" />
+
+    <!-- 成功上报数据记录 -->
+    <TextView
+        android:id="@+id/text_quanbushangbaojilu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_yijingshangbaojilu"
+        android:layout_marginTop="16dp"
+        android:text="全部上报数据记录：0 条"
+        android:textColor="@android:color/black"
+        android:textSize="24sp" />
+
+    <!-- 年月日时分秒 -->
+    <TextView
+        android:id="@+id/text_xianzaishijian"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_quanbushangbaojilu"
+        android:layout_marginTop="48dp"
+        android:text="2014年8月29日 21:30:24"
+        android:textColor="@android:color/black"
+        android:textSize="24sp" />
+
+</RelativeLayout>

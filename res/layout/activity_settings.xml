@@ -1,0 +1,489 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:fillViewport="true">
+
+    <!-- 系统管理 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="64dp">
+
+        <TextView
+            style="@style/NormalTextStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="32dp"
+            android:text="请输入相应的CSV文件按”导入“按钮。"
+            android:textStyle="bold" />
+
+        <!-- 房屋、来京人员 -->
+        <TextView
+            style="@style/NormalTextStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            android:text="【房屋、来京人员】" />
+
+        <!-- 行政区划 -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/black_frame"
+            android:padding="8dp">
+
+            <TextView
+                android:id="@+id/text_xingzhengquhua"
+                style="@style/NormalTextStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="行政区划"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/text_xingzhengquhua_daorule"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/text_xingzhengquhua"
+                android:text="（已经导入了）" />
+
+            <Button
+                android:id="@+id/button_xingzhengquhua_daoru"
+                style="@style/NormalTextStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:text="导入" />
+
+        </RelativeLayout>
+
+        <!-- 公安单位 -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/black_frame"
+            android:padding="8dp">
+
+            <TextView
+                android:id="@+id/text_gongandanwei"
+                style="@style/NormalTextStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="公安单位"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/text_gongandanwei_daorule"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/text_gongandanwei"
+                android:text="（已经导入了）" />
+
+            <Button
+                android:id="@+id/button_gongandanwei_daoru"
+                style="@style/NormalTextStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:text="导入" />
+
+        </RelativeLayout>
+
+        <!-- 街路巷 -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/black_frame"
+            android:padding="8dp">
+
+            <TextView
+                android:id="@+id/text_jieluxiang"
+                style="@style/NormalTextStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="街路巷"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/text_jieluxiang_daorule"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/text_jieluxiang"
+                android:text="（已经导入了）" />
+
+            <Button
+                android:id="@+id/button_jieluxiang_daoru"
+                style="@style/NormalTextStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:text="导入" />
+
+        </RelativeLayout>
+
+        <!-- 社区 -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/black_frame"
+            android:padding="8dp">
+
+            <TextView
+                android:id="@+id/text_shequ"
+                style="@style/NormalTextStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="社区"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/text_shequ_daorule"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/text_shequ"
+                android:text="（已经导入了）" />
+
+            <Button
+                android:id="@+id/button_shequ_daoru"
+                style="@style/NormalTextStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:text="导入" />
+
+        </RelativeLayout>
+
+        <!-- 社区管理员 -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/black_frame"
+            android:padding="8dp">
+
+            <TextView
+                android:id="@+id/text_shequguanliyuan"
+                style="@style/NormalTextStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="社区管理员"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/text_shequguanliyuan_daorule"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/text_shequguanliyuan"
+                android:text="（已经导入了）" />
+
+            <Button
+                android:id="@+id/button_shequguanliyuan_daoru"
+                style="@style/NormalTextStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:text="导入" />
+
+        </RelativeLayout>
+
+        <!-- 车辆 -->
+        <TextView
+            style="@style/NormalTextStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            android:layout_marginTop="32dp"
+            android:text="【车辆】" />
+
+        <!-- 机动车 -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/black_frame"
+            android:padding="8dp">
+
+            <TextView
+                android:id="@+id/text_jidongche"
+                style="@style/NormalTextStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="车辆类型"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/text_jidongche_daorule"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/text_jidongche"
+                android:text="（已经导入了）" />
+
+            <Button
+                android:id="@+id/button_jidongche_daoru"
+                style="@style/NormalTextStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:text="导入" />
+
+        </RelativeLayout>
+
+        <!-- 号牌种类 -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/black_frame"
+            android:padding="8dp">
+
+            <TextView
+                android:id="@+id/text_haopaizhonglei"
+                style="@style/NormalTextStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="号牌种类"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/text_haopaizhonglei_daorule"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/text_haopaizhonglei"
+                android:text="（已经导入了）" />
+
+            <Button
+                android:id="@+id/button_haopaizhonglei_daoru"
+                style="@style/NormalTextStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:text="导入" />
+
+        </RelativeLayout>
+
+        <!-- 车身颜色 -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/black_frame"
+            android:padding="8dp">
+
+            <TextView
+                android:id="@+id/text_cheshenyanse"
+                style="@style/NormalTextStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="车身颜色"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/text_cheshenyanse_daorule"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/text_cheshenyanse"
+                android:text="（已经导入了）" />
+
+            <Button
+                android:id="@+id/button_cheshenyanse_daoru"
+                style="@style/NormalTextStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:text="导入" />
+
+        </RelativeLayout>
+
+        <!-- 法规文件 -->
+        <TextView
+            style="@style/NormalTextStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            android:layout_marginTop="32dp"
+            android:text="【法规文件】" />
+
+        <!-- 主目录 -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/black_frame"
+            android:padding="8dp">
+
+            <TextView
+                android:id="@+id/text_zhumulu"
+                style="@style/NormalTextStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="主目录"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/text_zhumulu_daorule"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/text_zhumulu"
+                android:text="（已经导入了）" />
+
+            <Button
+                android:id="@+id/button_zhumulu_daoru"
+                style="@style/NormalTextStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:text="导入" />
+
+        </RelativeLayout>
+
+        <!-- 分目录 -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/black_frame"
+            android:padding="8dp">
+
+            <TextView
+                android:id="@+id/text_fenmulu"
+                style="@style/NormalTextStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="分目录"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/text_fenmulu_daorule"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/text_fenmulu"
+                android:text="（已经导入了）" />
+
+            <Button
+                android:id="@+id/button_fenmulu_daoru"
+                style="@style/NormalTextStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:text="导入" />
+
+        </RelativeLayout>
+
+        <!-- 内容 -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/black_frame"
+            android:padding="8dp">
+
+            <TextView
+                android:id="@+id/text_neirong"
+                style="@style/NormalTextStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="内容"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/text_neirong_daorule"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/text_neirong"
+                android:text="（已经导入了）" />
+
+            <Button
+                android:id="@+id/button_neirong_daoru"
+                style="@style/NormalTextStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:text="导入" />
+
+        </RelativeLayout>
+
+        <TextView
+            style="@style/NormalTextStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="48dp"
+            android:text="要使用无线功能，请输入服务器地址。"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:text="例如：http://192.168.1.101"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <!-- 社区管理员 -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/black_frame"
+            android:padding="8dp">
+
+            <EditText
+                android:id="@+id/edit_fuwuqidizhi"
+                style="@style/NormalTextStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/button_shezhi"
+                android:hint="服务器地址" />
+
+            <Button
+                android:id="@+id/button_shezhi"
+                style="@style/NormalTextStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:text="设置" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- 查看历史轨迹 -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!-- 身份证号码 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="16dp">
+
+        <TextView
+            style="@style/NormalTextStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="身份证号码：" />
+
+        <TextView
+            android:id="@+id/text_id_card_number"
+            style="@style/NormalTextStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <!-- 定界符 -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/black" />
+
+    <!-- 标题 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:orientation="horizontal"
+        android:padding="16dp">
+
+        <TextView
+            style="@style/NormalTextStyle"
+            android:layout_width="48dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="12dp"
+            android:gravity="right"
+            android:text="序号"
+            android:textStyle="bold" />
+
+        <TextView
+            style="@style/NormalTextStyle"
+            android:layout_width="96dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="12dp"
+            android:gravity="center"
+            android:text="姓名"
+            android:textStyle="bold" />
+
+        <TextView
+            style="@style/NormalTextStyle"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:layout_marginRight="12dp"
+            android:text="现住地详细地址"
+            android:textStyle="bold" />
+
+        <TextView
+            style="@style/NormalTextStyle"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:layout_marginRight="12dp"
+            android:text="数据来源"
+            android:textStyle="bold" />
+
+        <TextView
+            style="@style/NormalTextStyle"
+            android:layout_width="96dp"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:text="登记时间"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <!-- 记录列表 -->
+    <ListView
+        android:id="@+id/list_register_history"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.0" />
+
+</LinearLayout>

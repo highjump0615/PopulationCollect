@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Search, should appear as action button -->
+    <item
+        android:id="@+id/action_TianJia"
+        android:icon="@android:drawable/ic_menu_add"
+        android:showAsAction="ifRoom"
+        android:title=""
+        android:visible="false" />
+
+    <!-- Settings, should always be in the overflow -->
+    <item
+        android:id="@+id/action_ChuZuFangWu"
+        android:showAsAction="never"
+        android:title="出租房屋" />
+
+    <item
+        android:id="@+id/action_LaiJingRenYuan"
+        android:showAsAction="never"
+        android:title="来京人员" />
+
+    <item
+        android:id="@+id/action_CheLiangXinXi"
+        android:showAsAction="never"
+        android:title="车辆信息" />
+
+    <item
+        android:id="@+id/action_ShangBaoShuJu"
+        android:showAsAction="never"
+        android:title="上报数据" />
+
+    <item
+        android:id="@+id/action_CaiJiTongJi"
+        android:showAsAction="never"
+        android:title="采集统计" />
+
+    <item
+        android:id="@+id/action_YongHuGuanLi"
+        android:showAsAction="never"
+        android:title="用户管理" />
+
+    <item
+        android:id="@+id/action_BiDuiYuJing"
+        android:showAsAction="never"
+        android:title="比对预警" />
+
+    <item
+        android:id="@+id/action_XiTongRiZhi"
+        android:showAsAction="never"
+        android:title="系统日志" />
+
+    <item
+        android:id="@+id/action_XiTongGuanLi"
+        android:showAsAction="never"
+        android:title="系统管理" />
+
+    <item
+        android:id="@+id/action_BianXieFaGui"
+        android:showAsAction="never"
+        android:title="法规文件" />
+
+    <item
+        android:id="@+id/action_TuiChu"
+        android:showAsAction="never"
+        android:title="退出" />
+
+</menu>

@@ -1,0 +1,348 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.haoweifukai.LiuDongRenKouCaijiGuanLi"
+    android:versionCode="1"
+    android:versionName="1.0">
+
+    <uses-sdk
+        android:maxSdkVersion="20"
+        android:minSdkVersion="14"
+        android:targetSdkVersion="19" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.usb.host" />
+
+    <uses-permission android:name="android.permission.READ_OWNER_DATA" />
+    <uses-permission android:name="android.permission.WRITE_OWNER_DATA" />
+
+    <uses-permission android:name="android.permission.ACCESS_GPS" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <!-- 腾讯定位 sdk 要求的权限  (开始) -->
+    <!-- 通过GPS得到精确位置 -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <!-- 通过网络得到粗略位置 -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <!-- 访问网络. 某些位置信息需要从网络服务器获取 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- 访问WiFi状态. 需要WiFi信息用于网络定位 -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <!-- 修改WiFi状态. 发起WiFi扫描, 需要WiFi信息用于网络定位 -->
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <!-- 访问网络状态, 检测网络的可用性. 需要网络运营商相关信息用于网络定位 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!-- 访问网络的变化, 需要某些信息用于网络定位 -->
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <!-- 访问手机当前状态, 需要device id用于网络定位 -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <!-- 腾讯定位 sdk 要求的权限 (结束) -->
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:theme="@style/AppTheme">
+
+        <!-- 登录 -->
+        <activity
+            android:name=".LoginActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".MainActivity"
+            android:screenOrientation="portrait" />
+
+        <!-- 房屋信息列表 -->
+        <activity
+            android:name=".RentRoomListActivity"
+            android:label="出租房屋列表"
+            android:parentActivityName=".MainActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustNothing">
+
+            <!-- Parent activity meta-data to support 4.0 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+
+        </activity>
+
+        <!-- 查看房屋信息 -->
+        <activity
+            android:name=".RentRoomActivity"
+            android:label="出租房屋登记"
+            android:parentActivityName=".RentRoomListActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize">
+
+            <!-- Parent activity meta-data to support 4.0 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".RentRoomListActivity" />
+
+        </activity>
+
+        <!-- 来京人员信息列表 -->
+        <activity
+            android:name=".FloatingPersonListActivity"
+            android:label="来京人员列表"
+            android:parentActivityName=".MainActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustNothing">
+
+            <!-- Parent activity meta-data to support 4.0 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+
+        </activity>
+
+        <!-- 查看来京人员信息 -->
+        <activity
+            android:name=".FloatingPersonActivity"
+            android:label="来京人员登记"
+            android:parentActivityName=".FloatingPersonListActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize">
+
+            <!-- Parent activity meta-data to support 4.0 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".FloatingPersonListActivity" />
+
+        </activity>
+
+        <!-- 车辆信息列表 -->
+        <activity
+            android:name=".VehicleListActivity"
+            android:label="车辆信息列表"
+            android:parentActivityName=".MainActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustNothing">
+
+            <!-- Parent activity meta-data to support 4.0 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+
+        </activity>
+
+        <!-- 查看车辆信息 -->
+        <activity
+            android:name=".VehicleActivity"
+            android:label="车辆信息登记"
+            android:parentActivityName=".FloatingPersonListActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize">
+
+            <!-- Parent activity meta-data to support 4.0 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".FloatingPersonListActivity" />
+
+        </activity>
+
+        <!-- 上报数据 -->
+        <activity
+            android:name=".ReportDataActivity"
+            android:label="上报数据"
+            android:parentActivityName=".MainActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustNothing">
+
+            <!-- Parent activity meta-data to support 4.0 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+
+        </activity>
+
+        <!-- 采集统计 -->
+        <activity
+            android:name=".StatisticsActivity"
+            android:label="采集统计"
+            android:parentActivityName=".MainActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustNothing">
+
+            <!-- Parent activity meta-data to support 4.0 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+
+        </activity>
+
+        <!-- 用户管理 -->
+        <activity
+            android:name=".ManageAccountActivity"
+            android:label="用户管理"
+            android:parentActivityName=".MainActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustNothing">
+
+            <!-- Parent activity meta-data to support 4.0 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+
+        </activity>
+
+        <!-- 比对预警、黑名单 -->
+        <activity
+            android:name=".BlackListActivity"
+            android:label="比对预警"
+            android:parentActivityName=".MainActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustNothing">
+
+            <!-- Parent activity meta-data to support 4.0 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+
+        </activity>
+
+        <!-- 预警信息 -->
+        <activity
+            android:name=".AlertDetailActivity"
+            android:label="预警信息"
+            android:parentActivityName=".MainActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustNothing">
+
+            <!-- Parent activity meta-data to support 4.0 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+
+        </activity>
+
+        <!-- 系统日志 -->
+        <activity
+            android:name=".SystemLogActivity"
+            android:label="系统日子记录"
+            android:parentActivityName=".MainActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustNothing">
+
+            <!-- Parent activity meta-data to support 4.0 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+
+        </activity>
+
+        <!-- 查看系统日志 -->
+        <activity
+            android:name=".SystemLogViewActivity"
+            android:label="系统日子信息"
+            android:parentActivityName=".SystemLogActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustNothing">
+
+            <!-- Parent activity meta-data to support 4.0 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".SystemLogActivity" />
+
+        </activity>
+
+        <!-- 系统管理 -->
+        <activity
+            android:name=".SettingsActivity"
+            android:label="系统管理"
+            android:parentActivityName=".MainActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize">
+
+            <!-- Parent activity meta-data to support 4.0 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+
+        </activity>
+
+        <!-- 检索历史轨迹 -->
+        <activity
+            android:name=".RegisterHistoryActivity"
+            android:label="查看历史轨迹"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustNothing" />
+
+        <!-- 查看历史轨迹 -->
+        <activity
+            android:name=".PersonViewActivity"
+            android:label="查看历史轨迹"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustNothing" />
+
+        <!-- 查看图片 -->
+        <activity
+            android:name=".PreviewPhotoActivity"
+            android:label="查看图片"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustNothing" />
+
+        <!-- 查看摄像 -->
+        <activity
+            android:name=".PreviewVideoActivity"
+            android:label="查看摄像"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustNothing" />
+
+        <!-- 法规文件 -->
+        <activity
+            android:name=".HelpActivity"
+            android:label="法规文件"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustNothing" />
+
+        <activity
+            android:name=".HelpViewActivity"
+            android:label="法规文件"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustNothing" />
+
+        <!-- 数据库提供者 -->
+        <provider
+            android:name=".providers.MyContentProvider"
+            android:authorities="com.haoweifukai.LiuDongRenKouCaijiGuanLi.providers.MyContentProvider"
+            android:exported="false" />
+
+        <!-- 文件阅览 -->
+        <activity
+            android:name="com.ry.fileexplorer.FileChooser"
+            android:screenOrientation="portrait"
+            android:label="Choose File" />
+
+        <activity
+            android:name="com.ry.fileexplorer.DirectoryChooser"
+            android:screenOrientation="portrait"
+            android:label="Choose File" />
+
+        <!-- 您的发布产品中请不要使用这个 key !!! -->
+        <meta-data
+            android:name="TencentMapSDK"
+            android:value="EXLBZ-B7TH5-CTZIK-QNQFR-76OGO-GNFCS" />
+
+        <!-- 读卡器 -->
+        <service
+            android:name="com.synjones.padreader.RemoteService"
+            android:process=":remote" />
+
+        <service
+            android:name="com.synjones.otg.UsbMonitorService" />
+
+    </application>
+
+</manifest>

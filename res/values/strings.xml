@@ -1,0 +1,552 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <string name="app_name">社区警务智能系统V1.0</string>
+
+    <!-- Permanent Activity -->
+    <string name="year">年</string>
+    <string name="month">月</string>
+    <string name="day">日</string>
+
+    <string name="ChuZhuFangWuJiShu">出租房屋：<xliff:g id="name">%s</xliff:g> 套</string>
+    <string name="LaiJingRenYuanJiShu">来京人员：<xliff:g id="name">%s</xliff:g> 人</string>
+    <string name="CheLiangDengJi">车辆登记：<xliff:g id="name">%s</xliff:g> 辆</string>
+
+    <string name="total_record">共 <xliff:g id="name">%s</xliff:g> 条记录</string>
+
+    <!-- 房屋类型 -->
+    <string-array name="array_room_type">
+        <item>请选择</item>
+        <item>普通楼房类</item>
+        <item>普通平房类</item>
+        <item>群租房类</item>
+        <item>自建楼房</item>
+        <item>出租大院类</item>
+        <item>公寓类</item>
+        <item>人防工程类</item>
+        <item>普通地下室类</item>
+        <item>废旧厂房或公共设施改建的出租房</item>
+        <item>其它类</item>
+    </string-array>
+
+    <!-- 群租房类型 -->
+    <string-array name="array_accommodate_type">
+        <item>请选择</item>
+        <item>人均面积低于5平米，每房间超过两人（亲属关系除外）</item>
+        <item>大隔断</item>
+        <item>安置上下铺</item>
+        <item>厨房、阳台、卫生间、地下储藏室住人</item>
+    </string-array>
+
+    <!-- 建设性质 -->
+    <string-array name="array_construction_type">
+        <item>请选择</item>
+        <item>住宅</item>
+        <item>办公楼（写字楼）</item>
+        <item>临时性违法建设</item>
+        <item>公共设施（如：体育场馆附属设施）</item>
+        <item>生产建筑（如：库房、厂房、市场等）</item>
+        <item>其他</item>
+    </string-array>
+
+    <!-- 建筑类型 -->
+    <string-array name="array_building_type">
+        <item>请选择</item>
+        <item>平房</item>
+        <item>楼房</item>
+        <item>地下空间</item>
+        <item>其他</item>
+    </string-array>
+
+    <!-- 所有权类型 -->
+    <string-array name="array_ownership_type">
+        <item>请选择</item>
+        <item>个人</item>
+        <item>单位</item>
+        <item>违法建设</item>
+    </string-array>
+
+    <!-- 出租人类型 -->
+    <string-array name="array_renter_type">
+        <item>请选择</item>
+        <item>个人直租</item>
+        <item>单位直租</item>
+        <item>中介公司</item>
+        <item>个人转租</item>
+        <item>委托</item>
+    </string-array>
+
+    <!-- 证件类别 -->
+    <string-array name="array_certificate_type">
+        <item>请选择</item>
+        <item>居民身份证</item>
+        <item>护照</item>
+        <item>港澳台居民往来内地通行证</item>
+        <item>军人证件</item>
+        <item>其他</item>
+    </string-array>
+
+    <!-- 证件类别 -->
+    <string-array name="array_gender_type">
+        <item>请选择</item>
+        <item>男</item>
+        <item>女</item>
+    </string-array>
+
+    <!-- 户籍地 -->
+    <string-array name="array_domicile_type">
+        <item>请选择</item>
+        <item>本市</item>
+        <item>外省市</item>
+        <item>港澳台</item>
+        <item>外籍</item>
+    </string-array>
+
+    <!-- 政治面貌 -->
+    <string-array name="array_political_status_type">
+        <item>请选择</item>
+        <item>群众</item>
+        <item>中共党员</item>
+        <item>中共预备党员</item>
+        <item>共青团员</item>
+        <item>农工党党员</item>
+        <item>致工党党员</item>
+        <item>九三学社社员</item>
+        <item>民革会员</item>
+        <item>台盟盟员</item>
+        <item>民盟盟员</item>
+        <item>民建会员</item>
+        <item>民进会员</item>
+        <item>无党派民主人士</item>
+    </string-array>
+
+    <!-- 国籍 -->
+    <string-array name="array_nationality_type">
+        <item>请选择</item>
+        <item>澳大利亚</item>
+        <item>加拿大</item>
+        <item>中国</item>
+        <item>台湾</item>
+        <item>法国</item>
+        <item>香港</item>
+        <item>印度</item>
+        <item>日本</item>
+        <item>朝鲜</item>
+        <item>韩国</item>
+        <item>澳门</item>
+        <item>巴基斯坦</item>
+        <item>新加坡</item>
+        <item>越南</item>
+        <item>英国</item>
+        <item>美国</item>
+        <item>奥地利</item>
+        <item>尼日利亚</item>
+        <item>几内亚比绍</item>
+        <item>你度尼西亚</item>
+        <item>菲律宾</item>
+        <item>菜索托</item>
+        <item>利比里亚</item>
+        <item>瑞士</item>
+        <item>比利时</item>
+    </string-array>
+
+    <!-- 出租用途 -->
+    <string-array name="array_rental_purpose_type">
+        <item>请选择</item>
+        <item>生活居住</item>
+        <item>日常办公</item>
+        <item>生产加工</item>
+        <item>商用</item>
+        <item>无照经营旅店住宿</item>
+        <item>仓储</item>
+        <item>居住、办公、生产、商用一体</item>
+        <item>其他</item>
+    </string-array>
+
+    <!-- 租赁合同 -->
+    <string-array name="array_leased_contract">
+        <item>请选择</item>
+        <item>无</item>
+        <item>有</item>
+    </string-array>
+
+    <!-- 纳税 -->
+    <string-array name="array_paid_tax">
+        <item>请选择</item>
+        <item>已缴</item>
+        <item>未缴</item>
+    </string-array>
+
+    <!-- 登记备案 -->
+    <string-array name="array_processed_registration">
+        <item>请选择</item>
+        <item>已办</item>
+        <item>未办</item>
+    </string-array>
+
+    <!-- Levels on FloatingPerson -->
+    <!-- 受教育程度 -->
+    <string-array name="array_graduation_type">
+        <item>请选择</item>
+        <item>研究生及以上</item>
+        <item>大学本科</item>
+        <item>大学专科</item>
+        <item>高中(职高、中专、中技、技工)</item>
+        <item>初中</item>
+        <item>小学</item>
+        <item>不识字</item>
+    </string-array>
+
+    <!-- 户籍类别 -->
+    <string-array name="array_agriculture_type">
+        <item>请选择</item>
+        <item>非农业</item>
+        <item>农业</item>
+        <item>无户口</item>
+    </string-array>
+
+    <!-- 婚姻状况 -->
+    <string-array name="array_marriage_type">
+        <item>请选择</item>
+        <item>未婚</item>
+        <item>已婚</item>
+        <item>丧偶</item>
+        <item>离婚</item>
+    </string-array>
+
+    <!-- 出生地 -->
+    <string-array name="array_birthplace_type">
+        <item>请选择</item>
+        <item>北京</item>
+        <item>原籍</item>
+        <item>其他地区</item>
+    </string-array>
+
+    <!-- 居住证件 -->
+    <string-array name="array_resident_accept_type">
+        <item>请选择</item>
+        <item>无</item>
+        <item>有</item>
+    </string-array>
+
+    <!-- 婚育证明 -->
+    <string-array name="array_marriage_register_type">
+        <item>请选择</item>
+        <item>无</item>
+        <item>原籍证明</item>
+        <item>本市证明</item>
+    </string-array>
+
+    <!-- 是否 -->
+    <string-array name="array_yes_no">
+        <item>请选择</item>
+        <item>否</item>
+        <item>是</item>
+    </string-array>
+
+    <!-- 民族 -->
+    <string-array name="array_national_type">
+        <item>请选择</item>
+        <item>汉族</item>
+        <item>蒙古族</item>
+        <item>回族</item>
+        <item>藏族</item>
+        <item>维吾尔族</item>
+        <item>苗族</item>
+        <item>彝族</item>
+        <item>壮族</item>
+        <item>布依族</item>
+        <item>朝鲜族</item>
+        <item>满族</item>
+        <item>侗族</item>
+        <item>瑶族</item>
+        <item>白族</item>
+        <item>土家族</item>
+        <item>哈尼族</item>
+        <item>哈萨克族</item>
+        <item>傣族</item>
+        <item>黎族</item>
+        <item>傈傈族</item>
+        <item>佤族</item>
+        <item>畲族</item>
+        <item>高山族</item>
+        <item>拉祜族</item>
+        <item>水族</item>
+        <item>东乡族</item>
+        <item>纳西族</item>
+        <item>景颇族</item>
+        <item>柯尔克孜族</item>
+        <item>土族</item>
+        <item>达翰尔族</item>
+        <item>仫佬族</item>
+        <item>羌族</item>
+        <item>布朗族</item>
+        <item>撒拉族</item>
+        <item>毛南族</item>
+        <item>仡佬族</item>
+        <item>锡伯族</item>
+        <item>阿昌族</item>
+        <item>普米族</item>
+        <item>塔吉克族</item>
+        <item>怒族</item>
+        <item>乌孜别克族</item>
+        <item>俄罗斯族</item>
+        <item>鄂温克族</item>
+        <item>德昂族</item>
+        <item>保安族</item>
+        <item>裕固族</item>
+        <item>京族</item>
+        <item>塔塔尔族</item>
+        <item>独龙族</item>
+        <item>鄂伦春族</item>
+        <item>赫哲族</item>
+        <item>门巴族</item>
+        <item>珞巴族</item>
+        <item>基诺族</item>
+        <item>其他</item>
+    </string-array>
+
+    <!-- 与户主关系 -->
+    <string-array name="array_household_relation_type">
+        <item>请选择</item>
+        <item>配偶</item>
+        <item>子女</item>
+        <item>父母</item>
+        <item>祖父母/外祖父母</item>
+        <item>岳父母/公婆</item>
+        <item>孙子/孙女/外孙子/外孙女</item>
+        <item>媳婿</item>
+        <item>兄弟姐妹</item>
+        <item>其他</item>
+    </string-array>
+
+    <!-- 来京原因 -->
+    <string-array name="array_coming_cause_type">
+        <item>请选择</item>
+        <item>务工</item>
+        <item>务农</item>
+        <item>经商</item>
+        <item>学习培训</item>
+        <item>婚嫁</item>
+        <item>随迁</item>
+        <item>治病疗养</item>
+        <item>投靠亲友</item>
+        <item>工作调动</item>
+        <item>其他</item>
+    </string-array>
+
+    <!-- 居住类型 -->
+    <string-array name="array_resident_type">
+        <item>请选择</item>
+        <item>自购房屋</item>
+        <item>租赁房屋</item>
+        <item>寄宿</item>
+        <item>借住</item>
+        <item>单位宿舍</item>
+        <item>建筑工地</item>
+        <item>工作场所</item>
+        <item>学校内部</item>
+        <item>其他</item>
+    </string-array>
+
+    <!-- 目前状况 -->
+    <string-array name="array_situation_type">
+        <item>请选择</item>
+        <item>就业</item>
+        <item>学生</item>
+        <item>丧失劳动能力</item>
+        <item>退休</item>
+        <item>从事家务</item>
+        <item>正在找工作</item>
+        <item>学龄前儿童</item>
+        <item>其他</item>
+    </string-array>
+
+    <!-- 就业单位所属兴业 -->
+    <string-array name="array_job_unit_type">
+        <item>请选择</item>
+        <item>农、林、畜牧、渔业</item>
+        <item>采矿业</item>
+        <item>制造业</item>
+        <item>电力、热力、燃气及水生产和供应业</item>
+        <item>建筑业</item>
+        <item>批发和零售业</item>
+        <item>交通运输、仓储和邮政业</item>
+        <item>住宿和餐饮业</item>
+        <item>信息传输、软件和信息技术服务业</item>
+        <item>金融业</item>
+        <item>房地产业</item>
+        <item>租赁和商务服务业</item>
+        <item>科学研究和技术服务业</item>
+        <item>水利、环境和公共设施管理业</item>
+        <item>居民服务、修理和其他服务业</item>
+        <item>教育业</item>
+        <item>卫生和社会工作</item>
+        <item>文化、体育和娱乐业</item>
+        <item>公共管理、社会保障和社会组织</item>
+        <item>国际组织</item>
+        <item>其他行业</item>
+    </string-array>
+
+    <!-- 主要从事工作 -->
+    <string-array name="array_main_job_type1">
+        <item>农产品种植</item>
+        <item>林木产品采集、种植</item>
+        <item>畜牧养殖</item>
+        <item>渔业养殖、捕捞</item>
+        <item>农、林、牧、渔服务工作</item>
+    </string-array>
+
+    <string-array name="array_main_job_type2">
+        <item>煤炭开采</item>
+        <item>其他矿业开采（描述）</item>
+    </string-array>
+
+    <string-array name="array_main_job_type3">
+        <item>农副产品制造、加工</item>
+        <item>纺织品皮革产品制造、加工</item>
+        <item>木材、家具、造纸制造、加工</item>
+        <item>印刷工作</item>
+        <item>文体用品制造、加工</item>
+        <item>化工、医药制品制造、加工</item>
+        <item>金属、非金属矿物制品制造、加工</item>
+        <item>各种设备制造</item>
+    </string-array>
+
+    <string-array name="array_main_job_type4">
+        <item>电力、燃气及水的生产和供应</item>
+    </string-array>
+
+    <string-array name="array_main_job_type5">
+        <item>房屋工程建筑</item>
+        <item>房屋工程装饰</item>
+        <item>其他土木工程建筑和装饰（描述）</item>
+    </string-array>
+
+    <string-array name="array_main_job_type6">
+        <item>经销蔬菜干鲜水果</item>
+        <item>废品收购</item>
+        <item>煤气站工作</item>
+        <item>经销古玩玉器</item>
+        <item>经销民族饰品</item>
+        <item>经销麻糖</item>
+        <item>经销药品</item>
+        <item>经营小百货店</item>
+        <item>其他产品批发、零售（描述）</item>
+    </string-array>
+
+    <string-array name="array_main_job_type7">
+        <item>交通运输工作</item>
+        <item>仓储工作</item>
+        <item>邮政、寄递工作</item>
+        <item>其他交通运输业（描述）</item>
+    </string-array>
+
+    <string-array name="array_main_job_type8">
+        <item>小旅馆服务工作</item>
+        <item>经营小饮食店</item>
+        <item>卖烤串</item>
+        <item>其他住宿、餐饮工作（描述）</item>
+    </string-array>
+
+    <string-array name="array_main_job_type9">
+        <item>电信、信息传输服务工作</item>
+        <item>计算机软、硬件服务工作</item>
+        <item>其他信息技术业（描述）</item>
+    </string-array>
+
+    <string-array name="array_main_job_type10">
+        <item>金融、保险、证券工作</item>
+    </string-array>
+
+    <string-array name="array_main_job_type11">
+        <item>房地产中介工作</item>
+        <item>物业管理工作</item>
+        <item>其他房地产工作（描述）</item>
+    </string-array>
+
+    <string-array name="array_main_job_type12">
+        <item>职业中介服务</item>
+        <item>文化用品及日常用品出租</item>
+        <item>各种机械设备出租</item>
+        <item>其他商务服务</item>
+    </string-array>
+
+    <string-array name="array_main_job_type13">
+        <item>科学、技术服务工作</item>
+    </string-array>
+
+    <string-array name="array_main_job_type14">
+        <item>水利、环境和公共设施管理工作</item>
+    </string-array>
+
+    <string-array name="array_main_job_type15">
+        <item>理发及美容保健服务工作</item>
+        <item>保姆服务工作</item>
+        <item>保安服务工作</item>
+        <item>洗浴服务工作</item>
+        <item>汽车修理工作</item>
+        <item>其他家政服务（描述）</item>
+        <item>其他服务工作（描述）</item>
+    </string-array>
+
+    <string-array name="array_main_job_type16">
+        <item>教育工作</item>
+    </string-array>
+
+    <string-array name="array_main_job_type17">
+        <item>经营小诊所</item>
+        <item>卫生和社会工作</item>
+    </string-array>
+
+    <string-array name="array_main_job_type18">
+        <item>网吧服务工作</item>
+        <item>歌厅服务工作</item>
+        <item>文化、体育和娱乐其他工作</item>
+    </string-array>
+
+    <string-array name="array_main_job_type19">
+        <item>公共管理和社会组织工作</item>
+        <item>社会保障工作</item>
+    </string-array>
+
+    <string-array name="array_main_job_type20">
+        <item>国际组织工作</item>
+    </string-array>
+
+    <string-array name="array_main_job_type21">
+        <item>其他工作（描述）</item>
+    </string-array>
+
+    <!-- 职业 -->
+    <string-array name="array_job_type">
+        <item>请选择</item>
+        <item>单位负责人</item>
+        <item>专业、技术人员</item>
+        <item>办事人员</item>
+        <item>商业、服务业人员</item>
+        <item>农林牧渔水利生产人员</item>
+        <item>生产运输工人</item>
+    </string-array>
+
+    <!-- Levels on ReportDataActivity -->
+    <string name="HaiWeiShangBaoShuJuJiLu">还未上报数据记录：<xliff:g id="name">%s</xliff:g> 条</string>
+    <string name="YiJingShangBaoShuJuJiLu">已经上报数据记录：<xliff:g id="name">%s</xliff:g> 条</string>
+    <string name="QuanBuShangBaoShuJuJiLu">系统全部数据记录：<xliff:g id="name">%s</xliff:g> 条</string>
+
+    <string name="sdtname">姓名:</string>
+    <string name="sdtsex">性别:</string>
+    <string name="sdtnation">民族:</string>
+    <string name="sdtbirthday">出生:</string>
+    <string name="sdtaddress">住址:</string>
+    <string name="sdtpidno">公民身份号码:</string>
+
+    <string name="sdtgrantdept">发证机关:</string>
+    <string name="sdtuserlife">有效期限:</string>
+    <string name="sdtreadcard">读卡</string>
+    <string name="sdtexit">退出</string>
+    <string name="sdtstatus">状态:</string>
+
+
+</resources>
